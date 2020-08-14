@@ -1,0 +1,30 @@
+//beagle bpne black supports the wifi adaptor from which we can access the internet. to do this configuration in bbb the beagle bone official website provites the detail tutorial.
+
+
+//very first you need to go to sudo user mode
+
+//this can we done by command - sudo su
+
+//then type 
+
+      connmanctl // this command will open the wifi configuraion in bbb
+
+      scan wifi // this command to scan the wifi around the bbb board
+ 
+ 
+ // the bbb will show the wifi networks , before register to any one of them you need to turn on the agent.
+ 
+      agent on // this command will turn on the capability of registering to new wifi network
+      
+      connect ( the address of wifi network of which you want to connect)
+ 
+ 
+// after typing connect it will ask for password of wifi network if it is private.
+
+//wait for 2 second the beagle bone will give feedback about the estabilishment of network
+
+// once you connected you can type "quit" to get exit from configuration
+
+// now type " ping 8.8.8.8" to see if network is reachable.
+ 
+// the wifi module will automatically connect to registered wifi network whenevr it is available
